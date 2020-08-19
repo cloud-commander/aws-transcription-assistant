@@ -96,3 +96,6 @@ Lets quickly run through the app
 
 #### Exported Transcription
 ![Cognito Login](https://github.com/cloud-commander/aws-transcription-assistant/raw/master/screenshots/Capture7.PNG)
+
+### Acknowledgements
+I would like to extend my thanks to all those in the open source community that made this project possible, especially [PinkyJie](https://github.com/PinkyJie), the [BBC](https://github.com/bbc/react-transcript-editor) and [stackoverflow](https://stackoverflow.com/).
