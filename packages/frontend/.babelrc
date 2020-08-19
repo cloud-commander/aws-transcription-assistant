@@ -1,0 +1,10 @@
+// .babelrc
+{
+  "presets": [
+    "@babel/react",
+    "@babel/typescript",
+    ["@babel/env", {
+      "modules": true
+    }]
+  ]
+}

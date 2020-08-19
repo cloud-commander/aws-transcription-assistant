@@ -1,0 +1,19 @@
+.selectPlayerControl[name='playbackRate'] {
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 48px;
+  width: 48px;
+  border-radius: 25;
+  color: #0099ff;
+  border-color: transparent;
+  padding-left: 32px;
+}
+
+@media (max-width: 768px) {
+
+  .selectPlayerControl[name='playbackRate'] {
+    width: 100%;
+  }
+}

@@ -1,0 +1,209 @@
+@import '../../config/style-guide/colours.scss';
+
+.container {
+  background-color: #fcfcfc;
+  position: relative;
+}
+
+.main {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.mainWithAudiio{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 10px #ccc;
+}
+
+video{
+  margin-top: 1em;
+  display: block;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.help {
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  padding-right: 2.5em;
+  margin: 0.5em 0;
+  color: white;
+  display: block;
+  font-weight: lighter;
+  margin-top: 0.5em;
+  margin-right: 6em;
+}
+
+.helpMessage {
+  min-width: 240px;
+  text-align: left;
+}
+
+.settingsButton {
+  border-radius: 15px;
+  line-height: 1em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  background: $color-darkest-grey;
+  display: inline-block;
+  border: 0;
+  color: #232F3E;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+
+  &:hover {
+    background: $color-dark-grey;
+  }
+}
+
+
+.icon {
+  color: $color-labs-red;
+  margin-right: 0.5em;
+}
+
+.helpMessage span {
+  display: block;
+  font-weight: lighter;
+  margin-top: 1em;
+}
+
+@media (min-width: 1020px) {
+  .aside {
+    margin-left: auto;
+  }
+  .mainWithAudiio{
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+
+  .settingsContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .help {
+    display: none;
+  }
+}
+
+
+/* Desktop size */
+@media  (min-width: 769px) and (max-width: 1020px){
+
+
+  .grid {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .row {
+    display: grid;
+    /* grid-template-columns: 1fr 3fr; */
+    grid-column-gap: 1em;
+  }
+
+  .settingsContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  .mainWithAudiio{
+    margin-top: 1em;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+/* Ipad */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+
+  .aside {
+    margin-left: auto;
+  }
+
+  .main {
+    margin-top: 1em;
+    margin-right: auto;
+  }
+
+  .mainWithAudiio{
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  .settingsContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+}
+
+@media all and (device-height: 768px) and (device-width: 1024px) and (orientation: landscape) {
+
+  .aside {
+    margin-left: auto;
+  }
+
+  .main {
+    margin-right: auto;
+  }
+
+  .mainWithAudiio{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .settingsContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+}
+
+/* Mobile devices - excluding ipad*/
+@media (max-width: 767px) {
+  .row {
+  display: block;
+  }
+  .main {
+    width: 100%;
+    margin-top: 0.5em;
+  }
+
+  .aside{
+    margin-top: 0px;
+  }
+
+  .mainWithAudiio{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .settingsContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  .keyboardShortcutsButon {
+    display: none;
+  }
+}

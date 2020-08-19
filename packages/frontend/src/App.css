@@ -1,0 +1,28 @@
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #232f3e;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  position: ;
+}
+
+.App-body {
+  padding: 20px;
+}
+
+.word:hover {
+  background-color: orange;
+}
+
+.error-status {
+  text-decoration: underline;
+  color: red;
+}
