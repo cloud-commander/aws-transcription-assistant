@@ -1,0 +1,60 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "name": "aws-transcribe-demo",
+  "version": "2.0.0",
+  "description": "A simple AWS demo utilises Amazon Transcribe to convert audio to text and analyse.",
+  "author": "George Diavatis",
+  "scripts": {
+    "lerna": "lerna",
+    "cdk": "cdk",
+    "build": "lerna run build",
+    "bootstrap": "cdk bootstrap",
+    "deploy": "cdk deploy AwsTranscribeDemoStack",
+    "debug": "ts-node aws-cdk/index.ts",
+    "gen:cfn": "cdk synth > cfn.yml"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-apigateway": "^1.25.0",
+    "@aws-cdk/aws-cloudfront": "^1.25.0",
+    "@aws-cdk/aws-dynamodb": "^1.25.0",
+    "@aws-cdk/aws-iam": "^1.25.0",
+    "@aws-cdk/aws-lambda": "^1.25.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.25.0",
+    "@aws-cdk/aws-s3": "^1.25.0",
+    "@aws-cdk/aws-s3-deployment": "^1.25.0",
+    "@aws-cdk/aws-sns": "^1.25.0",
+    "@aws-cdk/aws-sns-subscriptions": "^1.25.0",
+    "@aws-cdk/core": "^1.25.0",
+    "@types/node": "13.7.5",
+    "aws-cdk": "^1.25.0",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.8",
+    "prettier": "1.19.1",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.2"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "singleQuote": true
+  }
+}
