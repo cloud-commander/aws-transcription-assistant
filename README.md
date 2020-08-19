@@ -23,8 +23,6 @@ So at a high level this is what is going on:
  - The interface allows the user to follow the transcription live as it synchronises the text with the audio being spoken
  - The user has the option to edit the text and then download it if desired
 
-User makes a re
-
 ### Install Guide
 
 So, how do you get this code running on your own AWS account?
