@@ -5,12 +5,6 @@ I am very excited to share with you a project I have been working on that makes 
 
 The application has been built as a *Progressive Web App (PWA)* using the React framework and as you might have guessed already, it makes use of AWS services.
 
-### Demo Site
-You can try this application out yourself now
-
-Navigate to https://transcribe.cloudcommander.net/
-Username: `github`
-Password: `L3tm3in`
 
 ### Solution Architecture
 ![Solution Architecture](https://raw.githubusercontent.com/cloud-commander/aws-transcription-assistant/master/aws-transcription-assistant-architecture-diagram.png)
